@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="XTextView">
+        <attr name="fontFamily" format="enum">
+            <enum name="nsText" value="1" />
+        </attr>
+
+        <attr name="fontStyle" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="thin" value="3" />
+            <enum name="italic" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="XEditText">
+        <attr name="txtFontFamily" format="enum">
+            <enum name="nsText" value="1" />
+        </attr>
+
+        <attr name="txtFontStyle" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="thin" value="3" />
+            <enum name="italic" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="XButton">
+        <attr name="btnFontFamily" format="enum">
+            <enum name="nsText" value="1" />
+        </attr>
+
+        <attr name="btnFontStyle" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="thin" value="3" />
+            <enum name="italic" value="4" />
+        </attr>
+    </declare-styleable>
+
+</resources>

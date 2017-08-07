@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/greenPrimary</color>
+    <color name="colorPrimaryDark">@color/greenPrimary</color>
+    <color name="colorAccent">@color/red_light</color>
+
+    <color name="red_dark">#f33d32</color>
+    <color name="greenPrimary">#5f9f63</color>
+    <color name="red_light">#fc6359</color>
+    <color name="white">#ffffff</color>
+    <color name="soft_gray">#e1dde3</color>
+    <color name="black">#000000</color>
+    <color name="text_grey">#777777</color>
+    <color name="chrome_red">#f43e33</color>
+    <color name="chrome_red_pressed">#f88b84</color>
+    <color name="gray_overlay">#77000000</color>
+</resources>

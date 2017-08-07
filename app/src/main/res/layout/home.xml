@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/if_google_firebase" />
+
+            <com.andrisasuke.placetagging.custom.XTextView
+                android:id="@+id/sign_out_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:text="Sign Out"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:fontStyle="bold"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:gravity="center"/>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4">
+
+            <RelativeLayout
+                android:id="@+id/tag_location_main"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/icon_place"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle_green">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_radio_button_checked_white_24dp" />
+
+                </RelativeLayout>
+
+                <com.andrisasuke.placetagging.custom.XTextView
+                    android:id="@+id/tag_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/icon_place"
+                    android:text="Tag your current location"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:fontStyle="bold" />
+
+                <com.andrisasuke.placetagging.custom.XTextView
+                    android:id="@+id/lat_lon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag_location"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/icon_place"
+                    android:textColor="@color/text_grey"
+                    android:textSize="12sp"
+                    app:fontStyle="regular"
+                    tools:text="(-6.221003, 106.780364)" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/icon_place"
+                    android:background="@color/soft_gray" />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_places"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tag_location_main"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                tools:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

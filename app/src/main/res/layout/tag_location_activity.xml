@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+        <com.andrisasuke.placetagging.custom.XTextView
+            android:id="@+id/sign_out_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:text="Tag Places"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:fontStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.andrisasuke.placetagging.custom.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Name"
+        android:textSize="12sp"
+        android:textColor="@color/red_dark"/>
+
+    <com.andrisasuke.placetagging.custom.XEditText
+        android:id="@+id/place_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:paddingBottom="20dp"
+        android:hint="Name"
+        android:textColorHint="@color/soft_gray"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:textColor="@color/text_grey"
+        tools:text="pitstop 1"/>
+
+    <com.andrisasuke.placetagging.custom.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Description"
+        android:textSize="12sp"
+        android:textColor="@color/red_dark"/>
+
+    <com.andrisasuke.placetagging.custom.XEditText
+        android:id="@+id/place_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:paddingBottom="20dp"
+        android:hint="Description"
+        android:textColorHint="@color/soft_gray"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:textColor="@color/text_grey" />
+
+    <com.andrisasuke.placetagging.custom.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Lat-Long"
+        android:textSize="12sp"
+        android:textColor="@color/red_dark"/>
+
+    <com.andrisasuke.placetagging.custom.XTextView
+        android:id="@+id/lat_lon_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:textColor="@color/text_grey"
+        tools:text="( 1.9876, 25.900998 )"/>
+
+    <com.andrisasuke.placetagging.custom.XButton
+        android:id="@+id/tag_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_red_disable_button"
+        android:drawablePadding="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:text="Tag This Places"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_marginTop="40dp"
+        app:btnFontStyle="bold"
+        tools:enabled="false"/>
+
+</LinearLayout>

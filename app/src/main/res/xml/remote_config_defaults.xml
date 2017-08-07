@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>surveyor_active</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>surveyor_event_id</key>
+        <value>none</value>
+    </entry>
+</defaultsMap>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Place Tagging</string>
+    <string name="google_map_key" translatable="false">AIzaSyB9qEWbLopJEmC6VRuU9lHN3B6RlPWjj8w</string>
+</resources>
